@@ -2,7 +2,7 @@
   "name": "emoji-log-assistant",
   "displayName": "Emoji Log Assistant - Smart Emoji Logs",
   "description": "Automatically adds meaningful emojis to your logs, console.log, print, and debug statements. The most advanced emoji log assistant for all programming languages.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "publisher": "abhijeettiwari",
   "author": {
     "name": "Abhijeet Tiwari"
@@ -47,6 +47,10 @@
       {
         "command": "emoji-log.addEmojis",
         "title": "Add Emojis to Console Logs"
+      },
+      {
+        "command": "emoji-log.insertLog",
+        "title": "Emoji Log: Insert suggested log statement"
       }
     ]
   },
