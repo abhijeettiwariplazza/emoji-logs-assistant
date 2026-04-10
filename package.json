@@ -1,20 +1,20 @@
 {
   "name": "emoji-log-assistant",
-  "displayName": "Emoji Log Assistant",
-  "description": "Transform your boring log statements into meaningful, emoji-rich debugging logs automatically. Supports Console.log, Println, Logger, and more across all languages.",
-  "version": "1.0.5",
+  "displayName": "Emoji Log Assistant - Smart Emoji Logs",
+  "description": "Automatically adds meaningful emojis to your logs, console.log, print, and debug statements. The most advanced emoji log assistant for all programming languages.",
+  "version": "1.0.8",
   "publisher": "abhijeettiwari",
   "author": {
     "name": "Abhijeet Tiwari"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhijeettiwari521/emoji-logs-assistant"
+    "url": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant"
   },
   "bugs": {
-    "url": "https://github.com/abhijeettiwari521/emoji-logs-assistant/issues"
+    "url": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant/issues"
   },
-  "homepage": "https://github.com/abhijeettiwari521/emoji-logs-assistant#readme",
+  "homepage": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant#readme",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.74.0"
@@ -22,16 +22,21 @@
   "categories": [
     "Programming Languages",
     "Visualization",
+    "Formatters",
     "Other"
   ],
   "keywords": [
     "emoji",
     "log",
+    "logs",
+    "emoji-log",
     "console.log",
     "debug",
-    "formatter",
     "logging",
-    "assistant"
+    "formatter",
+    "assistant",
+    "smart-logs",
+    "auto-emoji"
   ],
   "activationEvents": [
     "onStartupFinished"

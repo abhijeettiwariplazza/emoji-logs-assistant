@@ -150,10 +150,14 @@ function applyEdits(editor, edits) {
 }
 
 /**
- * Scans the entire workspace for supported files and adds emojis
+ * Scans the entire workspace for supported files and adds emojis, 
+ * strictly ignoring build, dist, and metadata folders.
  */
 async function processWorkspace() {
-    const files = await vscode.workspace.findFiles('**/*.{js,ts,py,java,cpp,c,cs,go,rb,php,sh}', '**/node_modules/**');
+    // Strictly define what to ignore to avoid touching build assets, node_modules, or native mobile folders
+    const excludePattern = '{**/node_modules/**,**/build/**,**/dist/**,**/out/**,**/.git/**,**/.vscode/**,**/.next/**,**/target/**,**/android/**,**/ios/**}';
+    
+    const files = await vscode.workspace.findFiles('**/*.{js,ts,py,java,cpp,c,cs,go,rb,php,sh}', excludePattern);
     let totalEdits = 0;
     let filesUpdated = 0;
 
