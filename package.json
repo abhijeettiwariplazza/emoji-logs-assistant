@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant"
+    "url": "https://github.com/abhijeettiwari521/emoji-logs-assistant"
   },
   "bugs": {
-    "url": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant/issues"
+    "url": "https://github.com/abhijeettiwari521/emoji-logs-assistant/issues"
   },
-  "homepage": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant#readme",
+  "homepage": "https://github.com/abhijeettiwari521/emoji-logs-assistant#readme",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.74.0"

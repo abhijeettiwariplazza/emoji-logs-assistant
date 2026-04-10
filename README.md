@@ -54,8 +54,8 @@ Install directly from the [VS Code Marketplace](https://marketplace.visualstudio
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/abhijeettiwariplazza/emoji-logs-assistant/issues).
+Feel free to check the [issues page](https://github.com/abhijeettiwari521/emoji-logs-assistant/issues).
 
 ---
 
-Made with ❤️ by [Abhijeet Tiwari](https://github.com/abhijeettiwariplazza)
+Made with ❤️ by [Abhijeet Tiwari](https://github.com/abhijeettiwari521)
