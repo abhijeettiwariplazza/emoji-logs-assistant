@@ -1,38 +1,61 @@
-# Emoji Log Assistant v1.0.2 🚀
-![Icon](icon.png)
+# Emoji Log Assistant 🚀
 
-A local VS Code extension that automatically adds the most relevant emojis to your print/log statements in any language!
+![Emoji Log Assistant](icon.png)
 
-### How it works:
-It scans your current file for typical log statements (like `console.log`, `print`, `println`, `echo`, `puts`, `System.out.println`, `Console.WriteLine`, `logger.info`, etc...) and checks the text inside the quotes. It then inserts the best matching emoji right into your string!
+**Emoji Log Assistant** is a powerful VS Code extension that automatically transforms your boring, plain-text log statements into meaningful, emoji-rich debugging messages. It uses intelligent keyword detection and the community-maintained `emojilib` to find the most relevant emojis for your code.
 
-### Supported Languages:
-Works seamlessly out of the box with JavaScript, TypeScript, Python, Java, Go, C#, C++, Ruby, PHP, Rust, and more by detecting common print patterns.
+## ✨ Features
 
-## Installation Status
-✅ I have automatically installed the extension into your local VS Code extensions directory (`~/.vscode/extensions/emoji-log-ext`).
+- **🧠 Contextual Emojis:** Automatically detects the intent of your logs (e.g., success, error, sync, heartbeat) and adds matching emojis.
+- **🌍 Multi-Language Support:** Works with JavaScript, TypeScript, Python, Java, Go, C#, Ruby, PHP, Rust, and many more.
+- **⚡ One-Click Formatting:** Add emojis to all log statements in your entire file with a single command.
+- **🛡️ Intelligent Skipping:** Automatically skips lines that already have emojis at the start to avoid duplication.
 
-### How to Activate It Now:
-1. Reload your VS Code window so it picks up the new extension (Press `Cmd+Shift+P` and type **Developer: Reload Window**, then press Enter).
-2. Open any code file that has some log statements (e.g., `console.log("Starting server")`).
-3. Open the Command Palette (`Cmd+Shift+P`).
-4. Type **"Add Emojis to Console Logs"** and select it.
-5. Watch the magic happen! Your log statements will automatically get cool emojis like `console.log("🚀 Starting server")`.
+## 🚀 How it Works
 
----
+The extension scans your file for common logging patterns and analyzes the string content. Using a combination of a curated manual map and dynamic searching, it prepends the perfect emoji to your strings.
 
-**Example Output:**
-
-*Before:*
+### Before:
 ```javascript
 console.error("Database connection failed")
 console.log("User authentication success")
 print("Loading user data")
 ```
 
-*After running the command:*
+### After:
 ```javascript
-console.error("❌ Database connection failed")
+console.error("🚨 Database connection failed")
 console.log("✅ User authentication success")
 print("⏳ Loading user data")
 ```
+
+## 🛠️ Supported Patterns
+
+Emoji Log Assistant supports a wide range of logging functions:
+- `console.log`, `info`, `warn`, `error`, `debug` (JS/TS)
+- `print`, `println` (Python, Swift, Kotlin)
+- `System.out.println` (Java)
+- `fmt.Println`, `fmt.Printf` (Go)
+- `Console.WriteLine` (C#)
+- `logger.info`, `error`, `warn` (Generic loggers)
+- `puts`, `echo` (Ruby, Shell, PHP)
+
+## 📖 How to Use
+
+1. Open any code file with log statements.
+2. Open the **Command Palette** (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+3. Type **"Add Emojis to Console Logs"** and press Enter.
+4. Enjoy your beautiful logs!
+
+## 📦 Installation
+
+Install directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=abhijeettiwari.emoji-log-assistant) or search for **"Emoji Log Assistant"** in the VS Code Extensions view.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/abhijeettiwariplazza/emoji-logs-assistant/issues).
+
+---
+
+Made with ❤️ by [Abhijeet Tiwari](https://github.com/abhijeettiwariplazza)

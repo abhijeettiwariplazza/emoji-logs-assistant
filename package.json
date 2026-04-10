@@ -1,19 +1,37 @@
 {
-  "name": "emoji-log",
+  "name": "emoji-log-assistant",
   "displayName": "Emoji Log Assistant",
-  "description": "Automatically adds contextual emojis to your log statements across all languages",
-  "version": "1.0.2",
+  "description": "Transform your boring log statements into meaningful, emoji-rich debugging logs automatically. Supports Console.log, Println, Logger, and more across all languages.",
+  "version": "1.0.3",
   "publisher": "abhijeettiwari",
+  "author": {
+    "name": "Abhijeet Tiwari"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhijeettiwari/emoji-log-ext.git"
+    "url": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant"
   },
+  "bugs": {
+    "url": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant/issues"
+  },
+  "homepage": "https://github.com/abhijeettiwariplazza/emoji-logs-assistant#readme",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": [
+    "Programming Languages",
+    "Visualization",
     "Other"
+  ],
+  "keywords": [
+    "emoji",
+    "log",
+    "console.log",
+    "debug",
+    "formatter",
+    "logging",
+    "assistant"
   ],
   "activationEvents": [],
   "main": "./src/extension.js",
