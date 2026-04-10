@@ -59,3 +59,5 @@ Feel free to check the [issues page](https://github.com/abhijeettiwari521/emoji-
 ---
 
 Made with ❤️ by [Abhijeet Tiwari](https://github.com/abhijeettiwari521)
+
+# emoji-logs-assistant
