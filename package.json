@@ -1,0 +1,32 @@
+{
+  "name": "emoji-log",
+  "displayName": "Emoji Log Assistant",
+  "description": "Automatically adds contextual emojis to your log statements across all languages",
+  "version": "1.0.2",
+  "publisher": "abhijeettiwari",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhijeettiwari/emoji-log-ext.git"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "emoji-log.addEmojis",
+        "title": "Add Emojis to Console Logs"
+      }
+    ]
+  },
+  "dependencies": {
+    "emojilib": "^4.0.2",
+    "node-emoji": "^2.2.0"
+  }
+}
