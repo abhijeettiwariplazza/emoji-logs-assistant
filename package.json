@@ -2,7 +2,7 @@
   "name": "emoji-log-assistant",
   "displayName": "Emoji Log Assistant",
   "description": "Transform your boring log statements into meaningful, emoji-rich debugging logs automatically. Supports Console.log, Println, Logger, and more across all languages.",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "publisher": "abhijeettiwari",
   "author": {
     "name": "Abhijeet Tiwari"
@@ -33,7 +33,9 @@
     "logging",
     "assistant"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./src/extension.js",
   "contributes": {
     "commands": [
