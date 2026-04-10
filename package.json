@@ -2,7 +2,7 @@
   "name": "emoji-log-assistant",
   "displayName": "Emoji Log Assistant - Smart Emoji Logs",
   "description": "Automatically adds meaningful emojis to your logs, console.log, print, and debug statements. The most advanced emoji log assistant for all programming languages.",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "publisher": "abhijeettiwari",
   "author": {
     "name": "Abhijeet Tiwari"
@@ -46,11 +46,75 @@
     "commands": [
       {
         "command": "emoji-log.addEmojis",
-        "title": "Add Emojis to Console Logs"
+        "title": "Emoji Log: Add Emojis to Current File"
+      },
+      {
+        "command": "emoji-log.scanWorkspace",
+        "title": "Emoji Log: Scan Entire Workspace"
+      },
+      {
+        "command": "emoji-log.wrapWithLog",
+        "title": "Emoji Log: Wrap Selection with Log"
+      },
+      {
+        "command": "emoji-log.pickEmoji",
+        "title": "Emoji Log: Pick Emoji for Current Log"
       },
       {
         "command": "emoji-log.insertLog",
-        "title": "Emoji Log: Insert suggested log statement"
+        "title": "Emoji Log: Insert Suggested Log"
+      },
+      {
+        "command": "emoji-log.resetScanPrompt",
+        "title": "Emoji Log: Reset Workspace Scan Prompt"
+      }
+    ],
+    "configuration": {
+      "title": "Emoji Log Assistant",
+      "properties": {
+        "emojiLog.autoEmojiOnType": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically add emojis to logs while typing or pasting code."
+        },
+        "emojiLog.formatOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically add emojis to logs when you save a file."
+        },
+        "emojiLog.suggestMissingLogs": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show hints (diagnostics) where log statements are missing (catch blocks, async functions, API calls)."
+        },
+        "emojiLog.showHoverInfo": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show emoji match details when hovering over a log statement."
+        },
+        "emojiLog.inlineEmojiSuggestions": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show inline emoji suggestions while typing inside a log string."
+        }
+      }
+    },
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/js.json"
       }
     ]
   },
